@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Danforun Replica"
+description = "A responsive staging replica of danforun.com, preserving the site's visible content, branding, and interactions for the owner's sandbox use."
+version = "1.0.0"
+id = "artifacts/danforun-replica"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18144
+
+[services.development]
+run = "pnpm --filter @workspace/danforun-replica run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/danforun-replica", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/danforun-replica/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18144"
+BASE_PATH = "/"

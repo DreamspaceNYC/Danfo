@@ -1,0 +1,55 @@
+/* Danfo Run replica shell — game visuals and typography live in the copied source page. */
+:root {
+  color-scheme: dark;
+  --background: 25 12% 8%;
+  --foreground: 40 100% 94%;
+  --border: 30 10% 20%;
+  --card: 25 12% 8%;
+  --card-foreground: 40 100% 94%;
+  --card-border: 30 10% 20%;
+  --sidebar: 25 12% 8%;
+  --sidebar-foreground: 40 100% 94%;
+  --sidebar-border: 30 10% 20%;
+  --sidebar-primary: 46 100% 62%;
+  --sidebar-primary-foreground: 25 12% 8%;
+  --sidebar-accent: 25 12% 14%;
+  --sidebar-accent-foreground: 40 100% 94%;
+  --sidebar-ring: 46 100% 62%;
+  --popover: 25 12% 8%;
+  --popover-foreground: 40 100% 94%;
+  --popover-border: 30 10% 20%;
+  --primary: 46 100% 62%;
+  --primary-foreground: 25 12% 8%;
+  --secondary: 25 12% 14%;
+  --secondary-foreground: 40 100% 94%;
+  --muted: 25 12% 14%;
+  --muted-foreground: 35 14% 66%;
+  --accent: 46 100% 62%;
+  --accent-foreground: 25 12% 8%;
+  --destructive: 6 77% 47%;
+  --destructive-foreground: 40 100% 94%;
+  --input: 30 10% 20%;
+  --ring: 46 100% 62%;
+  --chart-1: 46 100% 62%;
+  --chart-2: 142 62% 44%;
+  --chart-3: 6 77% 47%;
+  --chart-4: 194 72% 52%;
+  --chart-5: 30 44% 48%;
+  --app-font-sans: Inter, sans-serif;
+  --app-font-serif: Georgia, serif;
+  --app-font-mono: ui-monospace, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { width: 100%; height: 100%; min-height: 100%; margin: 0; overflow: hidden; }
+body { background: #14110f; color: #fff6e0; -webkit-font-smoothing: antialiased; }
+#root { min-height: 100dvh; }
+.game-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  min-height: 100%;
+  border: 0;
+  background: #14110f;
+}
