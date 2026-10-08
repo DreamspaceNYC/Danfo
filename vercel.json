@@ -1,6 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "experimentalServices": {
+  "projectSettings": {
+    "framework": "services"
+  },
+  "services": {
     "api-server": {
       "root": "artifacts/api-server",
       "framework": "express"
