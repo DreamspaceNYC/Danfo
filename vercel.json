@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
+  "experimentalServices": {
     "api-server": {
       "root": "artifacts/api-server",
       "framework": "express"
@@ -18,7 +18,7 @@
       ]
     }
   },
-"rewrites": [
+  "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": { "service": "api-server" }
@@ -28,3 +28,4 @@
       "destination": { "service": "danforun-replica" }
     }
   ]
+}
